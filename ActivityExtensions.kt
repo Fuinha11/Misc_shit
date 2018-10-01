@@ -1,4 +1,10 @@
 
+import android.app.Activity
+import android.content.Context
+import android.support.design.widget.Snackbar
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+
 fun Activity.snackbar(message: String, actionName: String = "", action: View.OnClickListener = View.OnClickListener {}, length: Int = Snackbar.LENGTH_LONG) {
     val v: View = this.findViewById(android.R.id.content)
     this.runOnUiThread {
